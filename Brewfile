@@ -31,6 +31,7 @@ cask 'virtualbox'
 cask 'docker'
 cask 'postico'
 mas 'Base', id: 402383384
+brew 'xcenv'
 
 # Productivity
 mas  'Pages', id: 409201541
@@ -53,9 +54,12 @@ mas  'Pixelmator Pro', id: 1289583905
 mas  'Reeder', id: 880001334
 mas  'Trello', id: 1278508951
 mas  'Tweetbot', id: 1384080005
+mas  'Slack', id: 803453959
+cask 'discord'
 cask 'transmission'
 
 # Utilities
+cask 'alfred'
 cask 'caffeine'
 cask 'licecap'
 mas  '1Blocker', id: 1107421413
