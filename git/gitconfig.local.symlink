@@ -1,0 +1,5 @@
+[user]
+        name = Rhys Powell
+        email = rhys@rpowell.me
+[credential]
+        helper = osxkeychain

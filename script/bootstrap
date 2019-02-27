@@ -23,6 +23,33 @@ fail () {
   exit
 }
 
+setup_gitconfig () {
+  if ! [ -f git/gitconfig.local.symlink ]
+  then
+    info 'setup gitconfig'
+
+    GIT_CREDENTIAL='cache'
+    if [ "$(uname -s)" == "Darwin" ]
+    then
+      GIT_CREDENTIAL='osxkeychain'
+    fi
+
+    if [[ -z "${GIT_USER}" ]]; then
+      user ' - What is your git author name?'
+      read -e GIT_USER
+    fi
+
+    if [[ -z "${GIT_EMAIL}" ]]; then
+      user ' - What is your git author email?'
+      read -e GIT_EMAIL
+    fi
+
+    sed -e "s/AUTHORNAME/$GIT_USER/g" -e "s/AUTHOREMAIL/$GIT_EMAIL/g" -e "s/GIT_CREDENTIAL_HELPER/$GIT_CREDENTIAL/g" git/gitconfig.local.symlink.example > git/gitconfig.local.symlink
+
+    success 'gitconfig'
+  fi
+}
+
 link_file () {
   local src=$1 dst=$2
 
@@ -122,8 +149,5 @@ fi
 
 info "Installing Homebrew Bundle"
 brew bundle
-success "Bundle installed"
-
-info "Linking dotfiles"
+setup_gitconfig
 install_dotfiles
-success "Dotfiles linked"
