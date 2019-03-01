@@ -4,9 +4,6 @@ status --is-interactive; and source (nodenv init -|psub)
 # Ruby
 status --is-interactive; and source (rbenv init -|psub)
 
-# Xcode
-status --is-interactive; and source (xcenv init -|psub)
-
 # Use NeoVim as my text edito
 set EDITOR '/usr/local/bin/nvim'
 set VISUAL '/usr/local/bin/nvim'
