@@ -132,6 +132,5 @@ echo -ens "\n\x1b[K" \
   (set_color green) (prompt_node_version) $normal \
   (set_color blue) (prompt_xcode_version) $normal \
   (set_color brred) (prompt_ruby_version) $normal \
-  (__fish_git_prompt) \
   "\n→ "
 end

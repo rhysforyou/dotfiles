@@ -21,3 +21,6 @@ set -x PATH $PATH $ANDROID_HOME/platform-tools
 
 # Flutter
 set -x PATH $PATH "$HOME/Library/flutter/bin"
+
+# Dotfiles
+set -x PATH $PATH "$HOME/.dotfiles/bin"

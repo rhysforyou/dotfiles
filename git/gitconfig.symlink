@@ -20,11 +20,5 @@
         prompt = false
 [help]
         autocorrect = 1
-[push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to suppress warning message
-        default = simple
-[credential]
-	helper = osxkeychain
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2

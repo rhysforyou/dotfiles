@@ -1,5 +1,8 @@
 [user]
         name = Rhys Powell
         email = rhys@rpowell.me
+        signingkey = 16947CEFC0014931
 [credential]
         helper = osxkeychain
+[commit]
+	gpgsign = true
