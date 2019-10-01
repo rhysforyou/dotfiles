@@ -127,10 +127,11 @@ if test $last_status -ne 0
 end
 
 echo -ens "\n\x1b[K" \
-  (set_color $fish_color_user) "$USER" $normal ' ' \
+#  (set_color $fish_color_user) "$USER" $normal ' ' \
   (set_color $color_cwd) (prompt_pwd) $normal ' ' \
   (set_color green) (prompt_node_version) $normal \
   (set_color blue) (prompt_xcode_version) $normal \
   (set_color brred) (prompt_ruby_version) $normal \
+  (__fish_git_prompt) \
   "\n→ "
 end
