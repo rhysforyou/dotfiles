@@ -20,5 +20,3 @@
         prompt = false
 [help]
         autocorrect = 1
-[gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
