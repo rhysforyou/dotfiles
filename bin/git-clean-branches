@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git branch --merged | grep -Ev "\*|master|develop" | xargs -n 1 git branch -d $argv;
