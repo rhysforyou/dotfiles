@@ -8,7 +8,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Declare the list of plugins.
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-easy-align'
@@ -21,5 +20,4 @@ call plug#end()
 
 syntax on
 set termguicolors
-colorscheme dracula
 " }}}
