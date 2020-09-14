@@ -1,6 +1,6 @@
 tap 'homebrew/bundle'
 tap 'homebrew/services'
-tap 'caskroom/cask'
+tap 'homebrew/cask'
 
 # Dev Essentials
 brew 'git'
@@ -9,6 +9,7 @@ brew 'fish'
 cask 'visual-studio-code'
 cask 'iterm2'
 cask 'tower'
+cask 'paw'
 mas  'Kaleidoscope', id: 587512244
 
 # Node.js
@@ -42,6 +43,7 @@ mas  'Marked 2', id: 890031187
 mas  'iA Writer', id: 775737590
 mas  'Bear', id: 1091189122
 mas  'Things3', id: 904280696
+mas 'Fantastical - Calendar & Tasks', id: 975937182
 
 # Design Tools
 cask 'sketch'
@@ -51,16 +53,17 @@ mas  'xScope', id: 889428659
 mas  'Pixelmator Pro', id: 1289583905
 
 # Internet
-mas  'Reeder', id: 880001334
+mas 'Twitter', id: 1482454543
+mas  'Reeder 4', id: 1449412482
 mas  'Trello', id: 1278508951
-mas  'Tweetbot', id: 1384080005
 mas  'Slack', id: 803453959
 cask 'discord'
 cask 'transmission'
+cask 'zoomus'
 
 # Utilities
-cask 'alfred'
-cask 'caffeine'
+cask 'launchbar'
+mas 'Amphetamine', id: 937984704
 cask 'licecap'
 mas  '1Blocker', id: 1107421413
 mas  '1Password 7', id: 1333542190
