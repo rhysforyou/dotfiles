@@ -147,7 +147,5 @@ else
     success "Homebrew already installed"
 fi
 
-info "Installing Homebrew Bundle"
-brew bundle
 setup_gitconfig
 install_dotfiles
